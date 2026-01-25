@@ -29,10 +29,10 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="section-padding bg-primary-50">
+    <section className="section-padding bg-bg-surface">
       <div className="container-custom">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-text-primary lg:text-4xl">
+        <div className="mb-20 text-center">
+          <h2 className="mb-6 text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
             Why Choose Us
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-text-secondary leading-relaxed">
@@ -41,20 +41,20 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
               <div
                 key={index}
-                className="group rounded-xl border border-primary-100 bg-white p-8 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                className="group rounded-2xl border border-border bg-bg-primary p-10 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
-                <div className="mb-6 flex justify-center">
-                  <div className="rounded-xl bg-accent-500/10 p-4 transition-all duration-300 group-hover:bg-accent-500/20 group-hover:scale-110">
-                    <Icon className="h-7 w-7 text-accent-500" />
+                <div className="mb-8 flex justify-center">
+                  <div className="rounded-2xl bg-accent/10 p-5 transition-all duration-300 group-hover:bg-accent/15 group-hover:scale-105">
+                    <Icon className="h-7 w-7 text-accent" />
                   </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold text-text-primary">
+                <h3 className="mb-4 text-xl font-semibold text-text-primary">
                   {feature.title}
                 </h3>
                 <p className="text-text-secondary leading-relaxed">{feature.description}</p>

@@ -20,10 +20,10 @@ export default function Clients() {
   const [isPaused, setIsPaused] = useState(false)
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-bg-primary">
       <div className="container-custom">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-text-primary lg:text-4xl">
+        <div className="mb-20 text-center">
+          <h2 className="mb-6 text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
             Our Trusted Clients
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-text-secondary leading-relaxed">
@@ -37,7 +37,7 @@ export default function Clients() {
           onMouseLeave={() => setIsPaused(false)}
         >
           <div
-            className={`flex gap-8 ${
+            className={`flex gap-6 ${
               isPaused ? 'animate-none' : 'animate-scroll'
             }`}
             style={{
@@ -47,7 +47,7 @@ export default function Clients() {
             {duplicatedLogos.map((client, index) => (
               <div
                 key={index}
-                className="flex h-28 w-56 flex-shrink-0 items-center justify-center rounded-lg border border-primary-100 bg-primary-50/50 p-6 transition-all hover:border-primary-200 hover:bg-primary-50"
+                className="flex h-32 w-64 flex-shrink-0 items-center justify-center rounded-xl border border-border bg-bg-surface p-8 transition-all duration-300 hover:border-border-muted hover:shadow-md"
               >
                 <span className="text-sm font-medium text-text-secondary">
                   {client.name}
@@ -69,7 +69,7 @@ export default function Clients() {
         }
 
         .animate-scroll {
-          animation: scroll 40s linear infinite;
+          animation: scroll 50s linear infinite;
         }
       `}</style>
     </section>

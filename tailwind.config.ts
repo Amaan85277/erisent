@@ -1,56 +1,63 @@
 import type { Config } from 'tailwindcss'
+import { theme } from './theme/theme'
 
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './theme/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
+        // Primary brand colors
         primary: {
-          DEFAULT: '#203354',
-          50: '#F5F7FA',
-          100: '#E2E8F0',
-          200: '#CBD5E1',
-          300: '#94A3B8',
-          400: '#64748B',
-          500: '#203354',
-          600: '#16243D',
-          700: '#0F172A',
-          800: '#0A0F1A',
-          900: '#05080D',
+          DEFAULT: theme.colors.primary,
+          dark: theme.colors.primaryDark,
+          light: theme.colors.primaryLight,
         },
+        // Accent colors
         accent: {
-          DEFAULT: '#2F80ED',
-          50: '#EBF4FF',
-          100: '#D6E9FF',
-          200: '#B3D3FF',
-          300: '#80B3FF',
-          400: '#4D93FF',
-          500: '#2F80ED',
-          600: '#1E6FD6',
-          700: '#155BB8',
-          800: '#0E4791',
-          900: '#083369',
+          DEFAULT: theme.colors.accent,
+          hover: theme.colors.accentHover,
         },
+        // Text colors
         text: {
-          primary: '#0F172A',
-          secondary: '#475569',
-          muted: '#64748B',
+          primary: theme.colors.textPrimary,
+          secondary: theme.colors.textSecondary,
+          muted: theme.colors.textMuted,
+          inverse: theme.colors.textInverse,
         },
+        // Background colors
+        bg: {
+          primary: theme.colors.bgPrimary,
+          surface: theme.colors.bgSurface,
+          surfaceAlt: theme.colors.bgSurfaceAlt,
+          dark: theme.colors.bgDark,
+        },
+        // Border colors
+        border: {
+          DEFAULT: theme.colors.border,
+          muted: theme.colors.borderMuted,
+          dark: theme.colors.borderDark,
+        },
+        // Status colors
+        success: theme.colors.success,
+        error: theme.colors.error,
+        warning: theme.colors.warning,
       },
       fontFamily: {
-        sans: ['var(--font-plus-jakarta)', 'system-ui', 'sans-serif'],
+        sans: [theme.typography.fontFamily.sans, 'system-ui', 'sans-serif'],
       },
       letterSpacing: {
-        heading: '0.01em',
+        heading: theme.typography.letterSpacing.heading,
+        tight: theme.typography.letterSpacing.tight,
       },
       animation: {
-        'fade-in': 'fadeIn 0.6s ease-out',
-        'slide-up': 'slideUp 0.6s ease-out',
-        'scroll': 'scroll 30s linear infinite',
+        'fade-in': 'fadeIn 0.8s ease-out',
+        'slide-up': 'slideUp 0.8s ease-out',
+        'scroll': 'scroll 40s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -58,7 +65,7 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         scroll: {

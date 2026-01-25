@@ -47,10 +47,10 @@ const solutions = [
 
 export default function SolutionsList() {
   return (
-    <section className="section-padding bg-primary-50">
+    <section className="section-padding bg-bg-surface">
       <div className="container-custom">
-        <div className="mb-16 text-center">
-          <h1 className="mb-4 text-3xl font-bold text-text-primary lg:text-4xl">
+        <div className="mb-20 text-center">
+          <h1 className="mb-6 text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
             Our Solutions
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-text-secondary leading-relaxed">
@@ -63,20 +63,20 @@ export default function SolutionsList() {
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="group overflow-hidden rounded-xl border border-primary-100 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="group overflow-hidden rounded-2xl border border-border bg-bg-primary shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
-              <div className="relative h-52 w-full overflow-hidden bg-primary-100">
+              <div className="relative h-56 w-full overflow-hidden bg-bg-surfaceAlt">
                 <Image
                   src={solution.image}
                   alt={`${solution.title} - Industrial electrical control panel`}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <div className="p-8">
-                <h3 className="mb-3 text-xl font-semibold text-text-primary">
+              <div className="p-10">
+                <h3 className="mb-4 text-xl font-semibold text-text-primary">
                   {solution.title}
                 </h3>
                 <p className="text-text-secondary leading-relaxed">{solution.description}</p>

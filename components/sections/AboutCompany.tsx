@@ -1,12 +1,12 @@
 export default function AboutCompany() {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-bg-primary">
       <div className="container-custom">
         <div className="mx-auto max-w-4xl">
-          <h1 className="mb-8 text-3xl font-bold text-text-primary lg:text-4xl">
+          <h1 className="mb-12 text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
             About Erisent Electro Controls
           </h1>
-          <div className="space-y-6 text-lg leading-relaxed text-text-secondary">
+          <div className="space-y-8 text-lg leading-relaxed text-text-secondary">
             <p>
               Erisent Electro Controls is a leading manufacturer of electrical control
               panels, specializing in the design, development, and production of

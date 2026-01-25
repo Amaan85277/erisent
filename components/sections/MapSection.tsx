@@ -43,13 +43,13 @@ export default function MapSection() {
   const defaultZoom = 13
 
   return (
-    <section className="section-padding bg-primary-50">
+    <section className="section-padding bg-bg-surface">
       <div className="container-custom">
-        <h2 className="mb-12 text-center text-3xl font-bold text-text-primary lg:text-4xl">
+        <h2 className="mb-16 text-center text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
           Find Us
         </h2>
         <div className="mx-auto max-w-4xl">
-          <div className="relative h-96 w-full overflow-hidden rounded-xl shadow-xl">
+          <div className="relative h-96 w-full overflow-hidden rounded-2xl shadow-xl">
             <MapContainer
               center={defaultCenter}
               zoom={defaultZoom}

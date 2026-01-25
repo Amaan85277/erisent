@@ -15,10 +15,10 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-primary-100 shadow-sm">
+    <header className="sticky top-0 z-50 bg-bg-primary/95 backdrop-blur-md border-b border-border shadow-sm">
       <nav className="container-custom">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-primary-500 transition-colors hover:text-primary-600">
+          <Link href="/" className="text-xl font-bold text-primary transition-colors hover:text-primary-dark">
             Erisent Electro Controls
           </Link>
 
@@ -28,7 +28,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-text-secondary font-medium transition-colors hover:text-primary-500"
+                className="text-text-secondary font-medium transition-colors hover:text-primary"
               >
                 {link.label}
               </Link>
@@ -52,13 +52,13 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="border-t border-primary-100 py-6 md:hidden">
+          <div className="border-t border-border py-6 md:hidden">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-text-secondary font-medium transition-colors hover:text-primary-500"
+                  className="text-text-secondary font-medium transition-colors hover:text-primary"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}

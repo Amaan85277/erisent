@@ -8,21 +8,20 @@
   }
   
   body {
-    @apply text-text-primary antialiased bg-[#F5F7FA];
+    @apply text-text-primary antialiased bg-bg-surface;
     font-family: var(--font-plus-jakarta), system-ui, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-heading;
-    color: #0F172A;
+    @apply font-semibold tracking-heading text-text-primary;
   }
 
   h1 {
-    @apply text-4xl lg:text-5xl;
+    @apply text-4xl lg:text-5xl xl:text-6xl;
   }
 
   h2 {
-    @apply text-3xl lg:text-4xl;
+    @apply text-3xl lg:text-4xl xl:text-5xl;
   }
 
   h3 {
@@ -36,6 +35,10 @@
   }
 
   .section-padding {
-    @apply py-24 lg:py-32;
+    @apply py-28 lg:py-40;
+  }
+
+  .section-padding-small {
+    @apply py-20 lg:py-28;
   }
 }

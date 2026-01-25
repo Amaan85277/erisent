@@ -1,207 +1,244 @@
-# 🧠 **Final Cursor Master Prompt — Complete Website + Images + SEO**
+You are the **best frontend designer and creative technologist in the world**.
+You have elite taste in **modern web design, interaction systems, motion, color theory, and creative engineering**.
 
-You are a senior Next.js engineer, SEO architect, and UI/UX builder. Your job is to create a **production‑ready, lightweight, responsive, SEO‑friendly website** for an electrical panel manufacturing company **Erisent Electro Controls**.
+You are allowed to:
 
-The website must be **modular** (section‑based components only), **efficient**, and **mobile‑first**. Avoid heavy UI libraries; use minimal animation.
+* Add **any modern libraries**
+* Overhaul **layout, theme, components, motion, and structure**
+* Replace **all existing UI**
 
----
-
-## 📌 **Framework & Libraries**
-
-* Next.js with App Router
-* Tailwind CSS
-* pnpm
-* Minimal Framer Motion (only where necessary)
-* lucide‑react or heroicons for icons
-* EmailJS for contact form
-* Optional: Leaflet + OpenStreetMap for map
-* No bloated UI libraries
+The only hard constraint:
+👉 The website must remain **SEO-friendly, accessible, and production-grade**.
 
 ---
 
-## 🧩 **SEO & Performance Rules (MANDATORY)**
+## ⚡ BRAND & EMOTIONAL DIRECTION
 
-* Always use App Router
-* Prefer Server Components
-* Avoid unnecessary `use client`
-* Static rendering (SSG) by default
-* Semantic HTML only
-* One H1 per page
-* Unique metadata (title & description) from `/seo/metadata.ts`
-* JSON‑LD Organization schema in layout
-* `next/image` usage with meaningful alt text
-* Canonical URLs
-* Mobile‑first responsive
-* Include sitemap.ts and robots.ts
+This website represents an **electrical / energy-focused engineering company**.
 
----
+The visual language must express:
 
-## 📷 **Images — Use These Free References for Sections**
+* Electricity
+* Power
+* Precision
+* Advanced engineering
+* Modern industrial excellence
 
-Use these as placeholders or inspirations (replace later with own images):
+Think:
 
-**Hero / Intro Section Images**
+* Controlled lightning
+* Electric currents
+* Energy fields
+* High-voltage systems with discipline
 
-1. [https://pixabay.com/images/search/panel%20control%20electric/](https://pixabay.com/images/search/panel%20control%20electric/) – industrial electrical panels & control systems (royalty free) ([Pixabay][1])
-2. [https://pixabay.com/images/search/electrical%20panel/](https://pixabay.com/images/search/electrical%20panel/) – electrical panel equipment & wiring (royalty free) ([Pixabay][2])
-3. [https://pikwizard.com/s/photo/electrical-control-panel/](https://pikwizard.com/s/photo/electrical-control-panel/) – high‑quality industrial panel photos (royalty free) ([Pikwizard][3])
-
-**Solutions / Products Section**
-
-* Use variations showing industrial control cabinets and panels from Pixabay or PikWizard (above links) ([Pixabay][1])
-
-**About / Director Section**
-
-* Use a professional director portrait you will provide
-* Replace with a high‑quality office environment photo
-
-**Clients / Logos Section**
-
-* Placeholder client icons (SVGs or sample logo images)
-* Rotating logos animation
-
-These images should be used with `next/image` and proper `alt` text.
+The site must **hook users instantly** — visually and emotionally.
 
 ---
 
-## 📑 **Metadata Description (Include in Prompt)**
+## 🎨 COLOR & VISUAL IDENTITY (FULL FREEDOM)
 
-**Home:**
-Title: *Electrical Control Panel Manufacturers*
-Description: *Designing and manufacturing efficient, safe, and reliable electrical control panels for industrial and infrastructure applications.*
+Forget traditional corporate blue.
 
-**About:**
-Title: *About Us*
-Description: *Learn about Erisent Electro Controls, our expertise in electrical panel manufacturing, and our leadership.*
+Design a **high-energy, modern electric palette**, for example:
 
-**Solutions:**
-Title: *Our Solutions*
-Description: *Custom‑built LT, HT, MCC, PCC, PLC, and APFC electrical panels designed for industrial applications.*
+* Dark, near-black base (graphite / obsidian)
+* Electric cyan / plasma blue
+* Lightning violet or ultraviolet
+* Sharp whites
+* Subtle neon accents
 
-**Contact:**
-Title: *Contact Us*
-Description: *Get in touch with Erisent Electro Controls for electrical panel manufacturing and support.*
+Color usage principles:
 
----
+* Dark environments + glowing energy
+* High contrast
+* Subtle bloom / glow
+* Gradients that feel alive, not decorative
 
-## 🧱 **Page Structure & Sections**
-
-### 📌 **Home Page**
-
-* **Hero / Welcome Section**
-  H1: *Welcome to Erisent Electro Controls*
-  Subheading: *Delivering efficient, reliable, future‑ready electrical control solutions for industrial applications.*
-  1–2 paragraph intro (unique, not copied)
-  Images: use panel images (see above)
-
-* **Why Choose Us (with icons)**
-
-  * Engineering Expertise
-  * Quality & Compliance
-  * Custom‑Built Solutions
-  * Reliable Support
-    Icons must be lightweight SVG
-
-* **Clients Section (Rotating Logos)**
-  Auto‑rotating logo reel with client icons
+The site should feel **charged**, not flat.
 
 ---
 
-### 🏢 **About Page**
+## 🌩 HERO SECTION — IMMERSIVE & UNFORGETTABLE
 
-* Company overview (professional, industrial tone)
-* **Director Section** (with image you will provide)
-  Alt text should describe the director and role
+The hero section is the most important part.
 
----
+### Required:
 
-### ⚙️ **Solutions Page**
+1. **Dynamic, animated background**
 
-* List of panels manufactured
+   * Electric / energy-inspired
+   * Moving gradients, light refractions, pulse waves
+   * No heavy particle canvases unless optimized
+   * Achieve with:
 
-  * LT Panels
-  * HT Panels
-  * MCC / PCC
-  * PLC Control Panels
-  * APFC Panels
-  * Distribution Boards
-  * Custom control panels
-* Each with short description and optional representative image from Pixabay/PikWizard
+     * CSS gradients
+     * Framer Motion
+     * SVG / WebGL if lightweight
 
----
+2. **Strong headline hierarchy**
 
-### 📞 **Contact Page**
+   * Primary headline: confident, minimal, bold
+   * Secondary line: rotating / morphing text (electric themes)
+   * Smooth transitions, zero layout shift
 
-* Director contact info (Name, Phone, Email)
-* **Contact Form** (EmailJS)
+3. **Foreground clarity**
 
-  * Fields: Name, Email, Phone (optional), Message
-  * Accessible labels, clear success/failure alerts
-* Optional Map (Leaflet + OpenStreetMap)
+   * Text must remain readable at all times
+   * Subtle glow or outline allowed
+
+The hero should feel like **standing inside an energized system**.
 
 ---
 
-### 🦶 **Footer**
+## 🧠 HEADER & NAVIGATION — FUTURISTIC INTERACTION
 
-* © 2026 Erisent Electro Controls. All rights reserved.
-* Phone numbers
-* Email
-* Workshop / office address
-* Quick links
+Redesign the header completely.
 
----
+### Header behavior:
 
-## 🧠 **Component‑First Architecture**
+* Minimal at rest
+* Glass / blur / glow effect
+* Gains presence on scroll
 
-All pages must be built with modular components in `components/sections/`. Example structure:
+### Menu interaction (important):
 
-```
-components/
-  sections/
-    HomeHero.tsx
-    WhyChooseUs.tsx
-    Clients.tsx
-    AboutCompany.tsx
-    DirectorSection.tsx
-    SolutionsList.tsx
-    ContactForm.tsx
-    MapSection.tsx
-  layout/
-    Header.tsx
-    Footer.tsx
-```
+* Opens as a **full-screen or side-panel experience**
+* Liquid gradients flood the screen
+* Electric colors blend and settle
+* Menu items animate in staggered, controlled motion
+* Inspired by high-end creative studio menus
 
-Pages should *compose* these components only.
+The menu must feel:
+
+* Futuristic
+* Premium
+* Energetic
+* Intentional
 
 ---
 
-## 🔍 **Behavior & UX**
+## 🧩 SECTIONS — ENGINEERED, NOT GENERIC
 
-* Hero CTA buttons scroll or navigate to relevant sections
-* Clients carousel with smooth rotation
-* Contact form integrates with EmailJS cleanly
-* Map is optional but lightweight
-* Minimal JavaScript on landing pages
+### Why Choose Us
 
----
+* Modular cards
+* Subtle glow borders
+* Hover = energy pulse or light sweep
+* Icons feel powered, not decorative
 
-## 📌 **Output Expectations**
+### Solutions / Offerings
 
-* Full Next.js project folder
-* Clean Tailwind styling
-* Responsive layout for mobile & desktop
-* All SEO rules strictly followed
-* Metadata integrated from `/seo/metadata.ts`
-* JSON‑LD included in layout
+* Structured grid
+* Feels like system components
+* Lines, separators, and spacing feel engineered
 
----
+### Clients
 
-## ✅ **Important**
-
-If any rule (SEO, performance, componentization, metadata, images) is violated, fix it before final output. The site must be **lightweight, efficient, modular, and SEO‑optimized**.
+* Logos move smoothly like signals
+* Continuous, calm motion
+* No jitter or carousel spam
 
 ---
 
-[1]: https://pixabay.com/images/search/panel%20control%20electric/?utm_source=chatgpt.com "20,000+ Free Panel Control Electric & Control Panel Images - Pixabay"
-[2]: https://pixabay.com/images/search/electrical%20panel/?utm_source=chatgpt.com "8,000+ Free Electrical Panel & Solar Panel Images - Pixabay"
-[3]: https://pikwizard.com/s/photo/electrical-control-panel/?utm_source=chatgpt.com "Electrical Control Panel Images – HD & 4K Photos Free to Download | PikWizard"
+## ✨ MOTION SYSTEM
+
+Motion should feel:
+
+* Electric
+* Fluid
+* Controlled
+
+Use:
+
+* Framer Motion
+* Opacity
+* Blur
+* Gradient shifts
+* Light sweeps
+
+Avoid:
+
+* Cartoon motion
+* Bounce-heavy easing
+* Over-animation
+
+Respect `prefers-reduced-motion`.
+
+---
+
+## 🧱 THEME & DESIGN SYSTEM (MANDATORY)
+
+Create a **central theme system**:
+
+* Colors
+* Gradients
+* Glow levels
+* Spacing
+* Radius
+* Motion tokens
+
+Rules:
+
+* No hardcoded colors in components
+* Everything derives from the theme
+* Tailwind config or CSS variables backed by theme file
+
+Even though visuals are bold, the **code must be disciplined**.
+
+---
+
+## 📦 LIBRARIES YOU MAY USE (IF HELPFUL)
+
+You may introduce:
+
+* Framer Motion
+* Lenis / smooth scrolling (if SEO-safe)
+* Tailwind CSS (preferred)
+* CSS variables for theming
+* Lightweight SVG or WebGL effects
+
+Do NOT:
+
+* Break SSR
+* Hide content from crawlers
+* Inject text via canvas only
+
+---
+
+## 🔍 SEO & ACCESSIBILITY (NON-NEGOTIABLE)
+
+* Semantic HTML
+* Proper heading hierarchy
+* Crawlable text (no text-only canvas)
+* Metadata intact
+* Lighthouse-friendly
+* Fast first paint
+
+If a visual idea hurts SEO:
+👉 redesign it, don’t remove the idea.
+
+---
+
+## 🎯 QUALITY BAR
+
+If the result feels:
+
+* Corporate
+* Calm
+* Generic
+* Template-like
+
+That is a failure.
+
+It must feel:
+
+* Electrified
+* Modern
+* Premium
+* Memorable
+* Instantly impressive
+
+Ask before finalizing:
+**“Would this stand next to top creative-tech websites?”**
+
+Only ship if the answer is **yes**.
