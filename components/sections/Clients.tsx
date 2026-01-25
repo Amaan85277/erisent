@@ -20,13 +20,13 @@ export default function Clients() {
   const [isPaused, setIsPaused] = useState(false)
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="section-padding bg-white">
       <div className="container-custom">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 lg:text-4xl">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-text-primary lg:text-4xl">
             Our Trusted Clients
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600">
+          <p className="mx-auto max-w-2xl text-lg text-text-secondary leading-relaxed">
             We are proud to serve leading companies across various industries.
           </p>
         </div>
@@ -47,9 +47,9 @@ export default function Clients() {
             {duplicatedLogos.map((client, index) => (
               <div
                 key={index}
-                className="flex h-24 w-48 flex-shrink-0 items-center justify-center rounded-lg bg-white p-4 shadow-sm"
+                className="flex h-28 w-56 flex-shrink-0 items-center justify-center rounded-lg border border-primary-100 bg-primary-50/50 p-6 transition-all hover:border-primary-200 hover:bg-primary-50"
               >
-                <span className="text-sm font-medium text-gray-600">
+                <span className="text-sm font-medium text-text-secondary">
                   {client.name}
                 </span>
               </div>
@@ -69,7 +69,7 @@ export default function Clients() {
         }
 
         .animate-scroll {
-          animation: scroll 30s linear infinite;
+          animation: scroll 40s linear infinite;
         }
       `}</style>
     </section>

@@ -2,15 +2,15 @@ import Image from 'next/image'
 
 export default function DirectorSection() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="section-padding bg-primary-50">
       <div className="container-custom">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="mb-12 text-center text-2xl font-bold text-gray-900 lg:text-3xl">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-16 text-center text-2xl font-bold text-text-primary lg:text-3xl">
             Leadership
           </h2>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
             {/* Director Image */}
-            <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl lg:h-[500px]">
+            <div className="relative h-96 w-full overflow-hidden rounded-xl shadow-2xl lg:h-[550px]">
               <Image
                 src="/director-placeholder.jpg"
                 alt="Director of Erisent Electro Controls - Professional portrait"
@@ -21,28 +21,28 @@ export default function DirectorSection() {
             </div>
 
             {/* Director Info */}
-            <div>
-              <h3 className="mb-4 text-2xl font-bold text-gray-900">Director</h3>
-              <p className="mb-6 text-lg text-gray-700">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-text-primary">Director</h3>
+              <p className="text-lg leading-relaxed text-text-secondary">
                 Our director brings extensive experience and visionary leadership to
                 Erisent Electro Controls. With a deep understanding of the electrical
                 control panel industry and a commitment to innovation, they guide our
                 company toward continued growth and excellence.
               </p>
-              <p className="mb-6 text-lg text-gray-700">
+              <p className="text-lg leading-relaxed text-text-secondary">
                 Under their leadership, we have consistently delivered high-quality
                 solutions that meet and exceed client expectations, while maintaining the
                 highest standards of safety and compliance in all our operations.
               </p>
-              <div className="space-y-2 text-gray-600">
-                <p>
-                  <strong className="text-gray-900">Name:</strong> [Director Name]
+              <div className="space-y-3 pt-4 border-t border-primary-100">
+                <p className="text-text-secondary">
+                  <strong className="text-text-primary font-semibold">Name:</strong> [Director Name]
                 </p>
-                <p>
-                  <strong className="text-gray-900">Email:</strong> director@erisent.com
+                <p className="text-text-secondary">
+                  <strong className="text-text-primary font-semibold">Email:</strong> director@erisent.com
                 </p>
-                <p>
-                  <strong className="text-gray-900">Phone:</strong> +91 XXX XXX XXXX
+                <p className="text-text-secondary">
+                  <strong className="text-text-primary font-semibold">Phone:</strong> +91 XXX XXX XXXX
                 </p>
               </div>
             </div>

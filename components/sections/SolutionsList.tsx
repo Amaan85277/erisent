@@ -47,13 +47,13 @@ const solutions = [
 
 export default function SolutionsList() {
   return (
-    <section className="py-20 bg-white">
+    <section className="section-padding bg-primary-50">
       <div className="container-custom">
-        <div className="mb-12 text-center">
-          <h1 className="mb-4 text-3xl font-bold text-gray-900 lg:text-4xl">
+        <div className="mb-16 text-center">
+          <h1 className="mb-4 text-3xl font-bold text-text-primary lg:text-4xl">
             Our Solutions
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600">
+          <p className="mx-auto max-w-2xl text-lg text-text-secondary leading-relaxed">
             Comprehensive range of electrical control panels designed for industrial
             applications
           </p>
@@ -63,22 +63,23 @@ export default function SolutionsList() {
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-xl"
+              className="group overflow-hidden rounded-xl border border-primary-100 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
-              <div className="relative h-48 w-full overflow-hidden">
+              <div className="relative h-52 w-full overflow-hidden bg-primary-100">
                 <Image
                   src={solution.image}
                   alt={`${solution.title} - Industrial electrical control panel`}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <div className="p-6">
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">
+              <div className="p-8">
+                <h3 className="mb-3 text-xl font-semibold text-text-primary">
                   {solution.title}
                 </h3>
-                <p className="text-gray-600">{solution.description}</p>
+                <p className="text-text-secondary leading-relaxed">{solution.description}</p>
               </div>
             </div>
           ))}

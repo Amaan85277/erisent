@@ -29,13 +29,13 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-white">
+    <section className="section-padding bg-primary-50">
       <div className="container-custom">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 lg:text-4xl">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-text-primary lg:text-4xl">
             Why Choose Us
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600">
+          <p className="mx-auto max-w-2xl text-lg text-text-secondary leading-relaxed">
             We combine technical excellence with customer-focused service to deliver
             electrical control solutions that exceed expectations.
           </p>
@@ -47,17 +47,17 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className="rounded-lg border border-gray-200 bg-gray-50 p-6 text-center transition-shadow hover:shadow-lg"
+                className="group rounded-xl border border-primary-100 bg-white p-8 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
-                <div className="mb-4 flex justify-center">
-                  <div className="rounded-full bg-primary-100 p-3">
-                    <Icon className="h-6 w-6 text-primary-600" />
+                <div className="mb-6 flex justify-center">
+                  <div className="rounded-xl bg-accent-500/10 p-4 transition-all duration-300 group-hover:bg-accent-500/20 group-hover:scale-110">
+                    <Icon className="h-7 w-7 text-accent-500" />
                   </div>
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-gray-900">
+                <h3 className="mb-3 text-xl font-semibold text-text-primary">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <p className="text-text-secondary leading-relaxed">{feature.description}</p>
               </div>
             )
           })}
