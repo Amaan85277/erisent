@@ -56,7 +56,7 @@ export default function RootLayout({
     '@type': 'Organization',
     name: 'Erisent Electro Controls',
     url: 'https://erisent.com',
-    logo: 'https://erisent.com/logo.png',
+    // logo: 'https://erisent.com/logo.png', todo: add logo
     description: 'Designing and manufacturing efficient, safe, and reliable electrical control panels for industrial and infrastructure applications.',
     address: {
       '@type': 'PostalAddress',
@@ -65,7 +65,7 @@ export default function RootLayout({
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
-      email: 'info@erisent.com',
+      email: 'sales@erisent.com',
     },
     sameAs: [],
   }
