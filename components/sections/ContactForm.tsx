@@ -141,7 +141,7 @@ export default function ContactForm() {
             {status === 'success' && (
               <div className="flex items-center gap-3 rounded-xl bg-success/10 border border-success/20 p-5 text-success">
                 <CheckCircle className="h-5 w-5 flex-shrink-0" />
-                <p className="font-medium">Message sent successfully! We'll get back to you soon.</p>
+                <p className="font-medium">Message sent successfully! We&apos;ll get back to you soon.</p>
               </div>
             )}
 
