@@ -1,47 +1,55 @@
 import Image from 'next/image'
 
+import ltPanelImage from '@/public/lt-panel.png'
+import htPanelImage from '@/public/ht-panel.png'
+import mccPccImage from '@/public/mcc-pcc-panel.webp'
+import plcPanelImage from '@/public/plc-panel.jpg'
+import apfcPanelImage from '@/public/apfc-panel.png'
+import distributionBoardImage from '@/public/distribution-boards.webp'
+import customControlPanelImage from '@/public/custom-control-panel.jpg'
+
 const solutions = [
   {
     title: 'LT Panels',
     description:
       'Low Tension panels designed for efficient power distribution and control in industrial settings. Built to handle standard voltage requirements with robust protection mechanisms.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
+    image: ltPanelImage,
   },
   {
     title: 'HT Panels',
     description:
       'High Tension panels engineered for high-voltage applications. Featuring advanced safety systems and reliable performance for critical industrial operations.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
+    image: htPanelImage,
   },
   {
     title: 'MCC / PCC',
     description:
       'Motor Control Centers and Power Control Centers providing centralized control and monitoring for multiple motors and electrical equipment in industrial facilities.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
+    image: mccPccImage,
   },
   {
     title: 'PLC Control Panels',
     description:
       'Programmable Logic Controller panels with advanced automation capabilities. Customized solutions for process control, monitoring, and industrial automation.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
+    image: plcPanelImage,
   },
   {
     title: 'APFC Panels',
     description:
       'Automatic Power Factor Correction panels designed to optimize power factor, reduce energy consumption, and improve overall electrical system efficiency.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
+    image: apfcPanelImage,
   },
   {
     title: 'Distribution Boards',
     description:
       'Comprehensive distribution boards for safe and organized electrical distribution. Available in various configurations to meet specific project requirements.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
+    image: distributionBoardImage,
   },
   {
     title: 'Custom Control Panels',
     description:
       'Bespoke control panel solutions tailored to your unique requirements. From design to manufacturing, we create panels that perfectly fit your application needs.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg',
+    image: customControlPanelImage,
   },
 ]
 

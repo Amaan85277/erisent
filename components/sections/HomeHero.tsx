@@ -58,8 +58,16 @@ export default function HomeHero() {
           {/* Image */}
           <div className="relative h-96 w-full overflow-hidden rounded-2xl shadow-2xl lg:h-[600px] animate-slide-up">
             <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/30 via-transparent to-transparent z-10"></div>
-            <Image
+            {/* <Image
               src="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg"
+              alt="Industrial electrical control panel with professional technician"
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            /> */}
+            <Image
+              src="/hero-image.jpg"
               alt="Industrial electrical control panel with professional technician"
               fill
               className="object-cover"

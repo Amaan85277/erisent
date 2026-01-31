@@ -36,14 +36,15 @@ export default function DirectorSection() {
               </p>
               <div className="space-y-4 pt-6 border-t border-border">
                 <p className="text-text-secondary">
-                  <strong className="text-text-primary font-semibold">Name:</strong> [Director Name]
+                  {/* <strong className="text-text-primary font-semibold">Name:</strong> */}
+                  Rizwan Ali
                 </p>
-                <p className="text-text-secondary">
+                {/* <p className="text-text-secondary">
                   <strong className="text-text-primary font-semibold">Email:</strong> director@erisent.com
                 </p>
                 <p className="text-text-secondary">
-                  <strong className="text-text-primary font-semibold">Phone:</strong> +91 XXX XXX XXXX
-                </p>
+                  <strong className="text-text-primary font-semibold">Phone:</strong> +91 9873560046
+                </p> */}
               </div>
             </div>
           </div>
