@@ -8,12 +8,37 @@
   }
   
   body {
-    @apply text-gray-900 antialiased;
+    @apply text-text-primary antialiased bg-bg-surface;
+    font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-heading text-text-primary;
+  }
+
+  h1 {
+    @apply text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl lg:text-4xl xl:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl lg:text-3xl;
   }
 }
 
 @layer components {
   .container-custom {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-28 lg:py-40;
+  }
+
+  .section-padding-small {
+    @apply py-20 lg:py-28;
   }
 }

@@ -20,13 +20,13 @@ export default function Clients() {
   const [isPaused, setIsPaused] = useState(false)
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="section-padding bg-bg-primary">
       <div className="container-custom">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 lg:text-4xl">
+        <div className="mb-20 text-center">
+          <h2 className="mb-6 text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
             Our Trusted Clients
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600">
+          <p className="mx-auto max-w-2xl text-lg text-text-secondary leading-relaxed">
             We are proud to serve leading companies across various industries.
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function Clients() {
           onMouseLeave={() => setIsPaused(false)}
         >
           <div
-            className={`flex gap-8 ${
+            className={`flex gap-6 ${
               isPaused ? 'animate-none' : 'animate-scroll'
             }`}
             style={{
@@ -47,9 +47,9 @@ export default function Clients() {
             {duplicatedLogos.map((client, index) => (
               <div
                 key={index}
-                className="flex h-24 w-48 flex-shrink-0 items-center justify-center rounded-lg bg-white p-4 shadow-sm"
+                className="flex h-32 w-64 flex-shrink-0 items-center justify-center rounded-xl border border-border bg-bg-surface p-8 transition-all duration-300 hover:border-border-muted hover:shadow-md"
               >
-                <span className="text-sm font-medium text-gray-600">
+                <span className="text-sm font-medium text-text-secondary">
                   {client.name}
                 </span>
               </div>
@@ -69,7 +69,7 @@ export default function Clients() {
         }
 
         .animate-scroll {
-          animation: scroll 30s linear infinite;
+          animation: scroll 50s linear infinite;
         }
       `}</style>
     </section>

@@ -29,35 +29,35 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-white">
+    <section className="section-padding bg-bg-surface">
       <div className="container-custom">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 lg:text-4xl">
+        <div className="mb-20 text-center">
+          <h2 className="mb-6 text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
             Why Choose Us
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600">
+          <p className="mx-auto max-w-2xl text-lg text-text-secondary leading-relaxed">
             We combine technical excellence with customer-focused service to deliver
             electrical control solutions that exceed expectations.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
               <div
                 key={index}
-                className="rounded-lg border border-gray-200 bg-gray-50 p-6 text-center transition-shadow hover:shadow-lg"
+                className="group rounded-2xl border border-border bg-bg-primary p-10 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
-                <div className="mb-4 flex justify-center">
-                  <div className="rounded-full bg-primary-100 p-3">
-                    <Icon className="h-6 w-6 text-primary-600" />
+                <div className="mb-8 flex justify-center">
+                  <div className="rounded-2xl bg-accent/10 p-5 transition-all duration-300 group-hover:bg-accent/15 group-hover:scale-105">
+                    <Icon className="h-7 w-7 text-accent" />
                   </div>
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-gray-900">
+                <h3 className="mb-4 text-xl font-semibold text-text-primary">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <p className="text-text-secondary leading-relaxed">{feature.description}</p>
               </div>
             )
           })}

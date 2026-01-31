@@ -1,0 +1,244 @@
+You are the **best frontend designer and creative technologist in the world**.
+You have elite taste in **modern web design, interaction systems, motion, color theory, and creative engineering**.
+
+You are allowed to:
+
+* Add **any modern libraries**
+* Overhaul **layout, theme, components, motion, and structure**
+* Replace **all existing UI**
+
+The only hard constraint:
+👉 The website must remain **SEO-friendly, accessible, and production-grade**.
+
+---
+
+## ⚡ BRAND & EMOTIONAL DIRECTION
+
+This website represents an **electrical / energy-focused engineering company**.
+
+The visual language must express:
+
+* Electricity
+* Power
+* Precision
+* Advanced engineering
+* Modern industrial excellence
+
+Think:
+
+* Controlled lightning
+* Electric currents
+* Energy fields
+* High-voltage systems with discipline
+
+The site must **hook users instantly** — visually and emotionally.
+
+---
+
+## 🎨 COLOR & VISUAL IDENTITY (FULL FREEDOM)
+
+Forget traditional corporate blue.
+
+Design a **high-energy, modern electric palette**, for example:
+
+* Dark, near-black base (graphite / obsidian)
+* Electric cyan / plasma blue
+* Lightning violet or ultraviolet
+* Sharp whites
+* Subtle neon accents
+
+Color usage principles:
+
+* Dark environments + glowing energy
+* High contrast
+* Subtle bloom / glow
+* Gradients that feel alive, not decorative
+
+The site should feel **charged**, not flat.
+
+---
+
+## 🌩 HERO SECTION — IMMERSIVE & UNFORGETTABLE
+
+The hero section is the most important part.
+
+### Required:
+
+1. **Dynamic, animated background**
+
+   * Electric / energy-inspired
+   * Moving gradients, light refractions, pulse waves
+   * No heavy particle canvases unless optimized
+   * Achieve with:
+
+     * CSS gradients
+     * Framer Motion
+     * SVG / WebGL if lightweight
+
+2. **Strong headline hierarchy**
+
+   * Primary headline: confident, minimal, bold
+   * Secondary line: rotating / morphing text (electric themes)
+   * Smooth transitions, zero layout shift
+
+3. **Foreground clarity**
+
+   * Text must remain readable at all times
+   * Subtle glow or outline allowed
+
+The hero should feel like **standing inside an energized system**.
+
+---
+
+## 🧠 HEADER & NAVIGATION — FUTURISTIC INTERACTION
+
+Redesign the header completely.
+
+### Header behavior:
+
+* Minimal at rest
+* Glass / blur / glow effect
+* Gains presence on scroll
+
+### Menu interaction (important):
+
+* Opens as a **full-screen or side-panel experience**
+* Liquid gradients flood the screen
+* Electric colors blend and settle
+* Menu items animate in staggered, controlled motion
+* Inspired by high-end creative studio menus
+
+The menu must feel:
+
+* Futuristic
+* Premium
+* Energetic
+* Intentional
+
+---
+
+## 🧩 SECTIONS — ENGINEERED, NOT GENERIC
+
+### Why Choose Us
+
+* Modular cards
+* Subtle glow borders
+* Hover = energy pulse or light sweep
+* Icons feel powered, not decorative
+
+### Solutions / Offerings
+
+* Structured grid
+* Feels like system components
+* Lines, separators, and spacing feel engineered
+
+### Clients
+
+* Logos move smoothly like signals
+* Continuous, calm motion
+* No jitter or carousel spam
+
+---
+
+## ✨ MOTION SYSTEM
+
+Motion should feel:
+
+* Electric
+* Fluid
+* Controlled
+
+Use:
+
+* Framer Motion
+* Opacity
+* Blur
+* Gradient shifts
+* Light sweeps
+
+Avoid:
+
+* Cartoon motion
+* Bounce-heavy easing
+* Over-animation
+
+Respect `prefers-reduced-motion`.
+
+---
+
+## 🧱 THEME & DESIGN SYSTEM (MANDATORY)
+
+Create a **central theme system**:
+
+* Colors
+* Gradients
+* Glow levels
+* Spacing
+* Radius
+* Motion tokens
+
+Rules:
+
+* No hardcoded colors in components
+* Everything derives from the theme
+* Tailwind config or CSS variables backed by theme file
+
+Even though visuals are bold, the **code must be disciplined**.
+
+---
+
+## 📦 LIBRARIES YOU MAY USE (IF HELPFUL)
+
+You may introduce:
+
+* Framer Motion
+* Lenis / smooth scrolling (if SEO-safe)
+* Tailwind CSS (preferred)
+* CSS variables for theming
+* Lightweight SVG or WebGL effects
+
+Do NOT:
+
+* Break SSR
+* Hide content from crawlers
+* Inject text via canvas only
+
+---
+
+## 🔍 SEO & ACCESSIBILITY (NON-NEGOTIABLE)
+
+* Semantic HTML
+* Proper heading hierarchy
+* Crawlable text (no text-only canvas)
+* Metadata intact
+* Lighthouse-friendly
+* Fast first paint
+
+If a visual idea hurts SEO:
+👉 redesign it, don’t remove the idea.
+
+---
+
+## 🎯 QUALITY BAR
+
+If the result feels:
+
+* Corporate
+* Calm
+* Generic
+* Template-like
+
+That is a failure.
+
+It must feel:
+
+* Electrified
+* Modern
+* Premium
+* Memorable
+* Instantly impressive
+
+Ask before finalizing:
+**“Would this stand next to top creative-tech websites?”**
+
+Only ship if the answer is **yes**.

@@ -1,26 +1,26 @@
 export default function AboutCompany() {
   return (
-    <section className="py-20 bg-white">
+    <section className="section-padding bg-bg-primary">
       <div className="container-custom">
-        <div className="mx-auto max-w-3xl">
-          <h1 className="mb-6 text-3xl font-bold text-gray-900 lg:text-4xl">
+        <div className="mx-auto max-w-4xl">
+          <h1 className="mb-12 text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
             About Erisent Electro Controls
           </h1>
-          <div className="prose prose-lg max-w-none text-gray-700">
-            <p className="mb-4 text-lg leading-relaxed">
+          <div className="space-y-8 text-lg leading-relaxed text-text-secondary">
+            <p>
               Erisent Electro Controls is a leading manufacturer of electrical control
               panels, specializing in the design, development, and production of
               high-quality control systems for industrial and infrastructure
               applications.
             </p>
-            <p className="mb-4 text-lg leading-relaxed">
+            <p>
               With a commitment to excellence and innovation, we have established
               ourselves as a trusted partner for businesses requiring reliable electrical
               control solutions. Our expertise spans across various types of panels
               including LT, HT, MCC, PCC, PLC, and APFC panels, each engineered to meet
               the specific needs of our clients.
             </p>
-            <p className="mb-4 text-lg leading-relaxed">
+            <p>
               Our state-of-the-art manufacturing facility is equipped with modern
               machinery and staffed by skilled professionals who ensure every panel meets
               the highest standards of quality, safety, and performance. We adhere to
@@ -28,7 +28,7 @@ export default function AboutCompany() {
               products that are not only efficient but also compliant with industry
               requirements.
             </p>
-            <p className="text-lg leading-relaxed">
+            <p>
               At Erisent Electro Controls, we believe in building long-term relationships
               with our clients through exceptional service, timely delivery, and
               continuous support. Our team works closely with customers from the initial

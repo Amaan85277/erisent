@@ -49,17 +49,17 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="section-padding bg-bg-primary">
       <div className="container-custom">
         <div className="mx-auto max-w-2xl">
-          <h2 className="mb-8 text-center text-3xl font-bold text-gray-900 lg:text-4xl">
+          <h2 className="mb-16 text-center text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
             Get in Touch
           </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-8">
             <div>
-              <label htmlFor="name" className="mb-2 block text-sm font-medium text-gray-700">
-                Name <span className="text-red-500">*</span>
+              <label htmlFor="name" className="mb-3 block text-sm font-semibold text-text-primary">
+                Name <span className="text-error">*</span>
               </label>
               <input
                 type="text"
@@ -68,14 +68,14 @@ export default function ContactForm() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200"
+                className="w-full rounded-xl border border-border bg-bg-surface px-6 py-4 text-text-primary placeholder:text-text-muted focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-200"
                 placeholder="Your full name"
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="mb-2 block text-sm font-medium text-gray-700">
-                Email <span className="text-red-500">*</span>
+              <label htmlFor="email" className="mb-3 block text-sm font-semibold text-text-primary">
+                Email <span className="text-error">*</span>
               </label>
               <input
                 type="email"
@@ -84,13 +84,13 @@ export default function ContactForm() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200"
+                className="w-full rounded-xl border border-border bg-bg-surface px-6 py-4 text-text-primary placeholder:text-text-muted focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-200"
                 placeholder="your.email@example.com"
               />
             </div>
 
             <div>
-              <label htmlFor="phone" className="mb-2 block text-sm font-medium text-gray-700">
+              <label htmlFor="phone" className="mb-3 block text-sm font-semibold text-text-primary">
                 Phone (Optional)
               </label>
               <input
@@ -99,14 +99,14 @@ export default function ContactForm() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200"
+                className="w-full rounded-xl border border-border bg-bg-surface px-6 py-4 text-text-primary placeholder:text-text-muted focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-200"
                 placeholder="+91 XXX XXX XXXX"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="mb-2 block text-sm font-medium text-gray-700">
-                Message <span className="text-red-500">*</span>
+              <label htmlFor="message" className="mb-3 block text-sm font-semibold text-text-primary">
+                Message <span className="text-error">*</span>
               </label>
               <textarea
                 id="message"
@@ -115,7 +115,7 @@ export default function ContactForm() {
                 rows={6}
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200"
+                className="w-full rounded-xl border border-border bg-bg-surface px-6 py-4 text-text-primary placeholder:text-text-muted focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-200 resize-none"
                 placeholder="Tell us about your requirements..."
               />
             </div>
@@ -123,7 +123,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={status === 'sending'}
-              className="w-full rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-700 disabled:cursor-not-allowed disabled:opacity-50"
+              className="w-full rounded-xl bg-accent px-8 py-4 font-semibold text-text-inverse transition-all duration-300 hover:bg-accent-hover hover:shadow-xl hover:shadow-accent/25 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:shadow-none"
             >
               {status === 'sending' ? (
                 'Sending...'
@@ -139,16 +139,16 @@ export default function ContactForm() {
 
             {/* Status Messages */}
             {status === 'success' && (
-              <div className="flex items-center gap-2 rounded-lg bg-green-50 p-4 text-green-800">
+              <div className="flex items-center gap-3 rounded-xl bg-success/10 border border-success/20 p-5 text-success">
                 <CheckCircle className="h-5 w-5 flex-shrink-0" />
-                <p>Message sent successfully! We'll get back to you soon.</p>
+                <p className="font-medium">Message sent successfully! We'll get back to you soon.</p>
               </div>
             )}
 
             {status === 'error' && (
-              <div className="flex items-start gap-2 rounded-lg bg-red-50 p-4 text-red-800">
+              <div className="flex items-start gap-3 rounded-xl bg-error/10 border border-error/20 p-5 text-error">
                 <AlertCircle className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <p>{errorMessage || 'An error occurred. Please try again.'}</p>
+                <p className="font-medium">{errorMessage || 'An error occurred. Please try again.'}</p>
               </div>
             )}
           </form>

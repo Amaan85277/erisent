@@ -43,13 +43,13 @@ export default function MapSection() {
   const defaultZoom = 13
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="section-padding bg-bg-surface">
       <div className="container-custom">
-        <h2 className="mb-8 text-center text-3xl font-bold text-gray-900 lg:text-4xl">
+        <h2 className="mb-16 text-center text-3xl font-bold text-text-primary lg:text-4xl xl:text-5xl tracking-tight">
           Find Us
         </h2>
         <div className="mx-auto max-w-4xl">
-          <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-lg">
+          <div className="relative h-96 w-full overflow-hidden rounded-2xl shadow-xl">
             <MapContainer
               center={defaultCenter}
               zoom={defaultZoom}
@@ -62,9 +62,9 @@ export default function MapSection() {
               <Marker position={defaultCenter}>
                 <Popup>
                   <div className="text-center">
-                    <strong>Erisent Electro Controls</strong>
+                    <strong className="text-text-primary">Erisent Electro Controls</strong>
                     <br />
-                    Workshop / Office Address
+                    <span className="text-text-secondary">Workshop / Office Address</span>
                   </div>
                 </Popup>
               </Marker>
