@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import RotatingText from '@/components/ui/RotatingText'
+import ltpanelImage from '@/public/lt-panel.png'
 
 export default function HomeHero() {
   const rotatingPhrases = [
@@ -67,7 +68,7 @@ export default function HomeHero() {
               sizes="(max-width: 1024px) 100vw, 50vw"
             /> */}
             <Image
-              src="/hero-image.jpg"
+              src={ltpanelImage}
               alt="Industrial electrical control panel with professional technician"
               fill
               className="object-cover"
