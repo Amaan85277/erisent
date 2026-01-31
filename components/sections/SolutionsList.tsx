@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import ltPanelImage from '@/public/lt-panel.png'
-import htPanelImage from '@/public/ht-panel.png'
 import mccPccImage from '@/public/mcc-pcc-panel.webp'
 import plcPanelImage from '@/public/plc-panel.jpg'
 import apfcPanelImage from '@/public/apfc-panel.png'
@@ -14,12 +13,6 @@ const solutions = [
     description:
       'Low Tension panels designed for efficient power distribution and control in industrial settings. Built to handle standard voltage requirements with robust protection mechanisms.',
     image: ltPanelImage,
-  },
-  {
-    title: 'HT Panels',
-    description:
-      'High Tension panels engineered for high-voltage applications. Featuring advanced safety systems and reliable performance for critical industrial operations.',
-    image: htPanelImage,
   },
   {
     title: 'MCC / PCC',

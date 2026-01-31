@@ -17,7 +17,7 @@ export default function AboutCompany() {
               With a commitment to excellence and innovation, we have established
               ourselves as a trusted partner for businesses requiring reliable electrical
               control solutions. Our expertise spans across various types of panels
-              including LT, HT, MCC, PCC, PLC, and APFC panels, each engineered to meet
+              including LT, MCC, PCC, PLC, and APFC panels, each engineered to meet
               the specific needs of our clients.
             </p>
             <p>
